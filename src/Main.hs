@@ -21,6 +21,7 @@ data Opts
       , _optSucceedOnNoWorkLeft     :: Bool
       , _optSucceedOnFailedSolve    :: Bool
       , _optImmQuit                 :: [ImmQuit]
+      , _optWriteVisualization      :: Bool
       }
 
 mkLabel ''Opts
@@ -32,6 +33,7 @@ defaultOpts
       , _optSucceedOnNoWorkLeft     = False
       , _optSucceedOnFailedSolve    = False
       , _optImmQuit                 = []
+      , _optWriteVisualization      = False
       }
 
 -- | Options for 'getOpt'
